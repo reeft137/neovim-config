@@ -10,13 +10,6 @@ if not luasnip_status then
   return
 end
 
--- Use LSPkind plugin
-local lspkind_status, lspkind = pcall(require, "plugin-config.lspkind")
-if not lspkind_status then
-  vim.notify("lspkind config not found")
-  return
-end
-
 -- Define "has_words_before" (for super tap)
 local has_words_before = function()
   unpack = unpack or table.unpack
@@ -28,7 +21,7 @@ cmp.setup({
   snippet = {
     -- REQUIRED - you must specify a snippet engine
     expand = function(args)
-      require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
+      require("luasnip").lsp_expand(args.body) -- For `luasnip` users.
     end,
   },
   mapping = cmp.mapping.preset.insert({
@@ -39,7 +32,6 @@ cmp.setup({
     -- Accept currently selected item.
     ['<CR>'] = cmp.mapping.confirm({
       select = true,
-      behavior = cmp.ConfirmBehavior.Replace
     }),
     -- A super tab
     -- src: https://github.com/hrsh7th/nvim-cmp/wiki/Example-mappings#luasnip
@@ -68,7 +60,7 @@ cmp.setup({
     { name = 'buffer' },   -- For buffer word completion
     { name = 'path' },     -- For path completion
   }),
-  formatting = lspkind.formatting,
+  formatting = require("plugin-config.lspkind").formatting,
 })
 
 -- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).
