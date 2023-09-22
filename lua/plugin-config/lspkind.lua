@@ -5,8 +5,8 @@ if not status then
 end
 
 lspkind.init({
-  mode = 'symbol_text',
-  preset = 'codicons',
+  mode = "symbol_text",
+  preset = "codicons",
   symbol_map = {
     Text = "󰉿",
     Method = "󰆧",
@@ -39,9 +39,9 @@ lspkind.init({
 local M = {}
 M.formatting = {
   format = lspkind.cmp_format({
-    mode = 'symbol_text',
+    mode = "symbol_text",
     maxwidth = 50,
-    ellipsis_char = '...',
+    ellipsis_char = "...",
 
     before = function(entry, vim_item)
       vim_item.menu = "[" .. string.upper(entry.source.name) .. "]"

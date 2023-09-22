@@ -15,7 +15,7 @@ vim.opt.showmode = false     -- Hide mode hint like "-- INSERT --"
 
 -- Completion UI config
 vim.opt.completeopt = "menuone,noselect,noinsert" -- List of options for Insert mode completion
-vim.opt.shortmess = vim.o.shortmess .. 'c'        -- Don't give ins-completion-menu messages
+vim.opt.shortmess = vim.o.shortmess .. "c"        -- Don't give ins-completion-menu messages
 vim.opt.pumheight = 10                            -- Number of lines for the completion menu
 
 -- CMD UI config
@@ -45,11 +45,11 @@ vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
 -- Set leader key (for keymaps)
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 -- Misc
-vim.opt.clipboard = 'unnamedplus' -- Use system clipboard
+vim.opt.clipboard = "unnamedplus" -- Use system clipboard
 vim.opt.autoread = true           -- Automatically read the file when it is modified outside
 vim.opt.mouse = "a"               -- Allow the mouse to be used in Neovim
 vim.opt.updatetime = 1000         -- If this many milliseconds nothing is typed the swap file will be written to disk

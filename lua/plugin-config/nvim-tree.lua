@@ -13,11 +13,13 @@ nvim_tree.setup({
   git = {
     enable = false,
   },
-  -- sync_root_with_cwd = true,
-  -- update_focused_file = {
-  --   enable = true,
-  --   update_root = true,
-  -- },
+  -- For project.nvim
+  sync_root_with_cwd = true,
+  update_focused_file = {
+    enable = true,
+    update_root = true,
+  },
+  respect_buf_cwd = true,
   -- Hide dotfiles
   filters = {
     dotfiles = true,
@@ -34,9 +36,9 @@ nvim_tree.setup({
 local map = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
-map('n', '<leader>m', ':NvimTreeToggle<CR>', opts) -- Open & close tree
+map("n", "<leader>m", ":NvimTreeToggle<CR>", opts) -- Open & close tree
 
 -- Quit after last buffer has been closed
 vim.cmd([[
-  autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif
+  autocmd BufEnter * ++nested if winnr("$") == 1 && bufname() == "NvimTree_" . tabpagenr() | quit | endif
 ]])

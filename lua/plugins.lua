@@ -54,33 +54,49 @@ require("lazy").setup({
       "nvim-tree/nvim-web-devicons",
     },
   },
-  'arkav/lualine-lsp-progress',
+  "arkav/lualine-lsp-progress",
 
   -- telescope
   {
-    'nvim-telescope/telescope.nvim',
-    tag = '0.1.2',
+    "nvim-telescope/telescope.nvim",
+    tag = "0.1.2",
     dependencies = {
-      'nvim-lua/plenary.nvim'
+      "nvim-lua/plenary.nvim"
     }
   },
 
+  -- project
+  "ahmedkhalf/project.nvim",
+
+  -- dashboard
+  {
+    'glepnir/dashboard-nvim',
+    event = 'VimEnter',
+    dependencies = { {'nvim-tree/nvim-web-devicons'}}
+  },
+
   -- cmp
-  'hrsh7th/nvim-cmp',
-  'hrsh7th/cmp-nvim-lsp',
-  'hrsh7th/cmp-buffer',  -- buffer auto-completion
-  'hrsh7th/cmp-path',    -- path auto-completion
-  'hrsh7th/cmp-cmdline', -- cmdline auto-completion
+  "hrsh7th/nvim-cmp",
+  "hrsh7th/cmp-nvim-lsp",
+  "hrsh7th/cmp-buffer",  -- buffer auto-completion
+  "hrsh7th/cmp-path",    -- path auto-completion
+  "hrsh7th/cmp-cmdline", -- cmdline auto-completion
 
   -- LuaSnip
-  'L3MON4D3/LuaSnip',
-  'saadparwaiz1/cmp_luasnip',
+  "L3MON4D3/LuaSnip",
+  "saadparwaiz1/cmp_luasnip",
 
   -- LSP
-  'neovim/nvim-lspconfig',
-  'williamboman/mason.nvim',
-  'williamboman/mason-lspconfig.nvim',
+  "neovim/nvim-lspconfig",
+  "williamboman/mason.nvim",
+  "williamboman/mason-lspconfig.nvim",
 
   -- LSP UI
-  'onsails/lspkind-nvim',
+  "onsails/lspkind-nvim",
+
+  -- comment
+  {
+    'numToStr/Comment.nvim',
+    lazy = false,
+  },
 })
