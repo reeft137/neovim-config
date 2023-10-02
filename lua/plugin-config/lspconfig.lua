@@ -51,6 +51,6 @@ vim.api.nvim_create_autocmd('LspAttach', {
     map('n', '<leader>wl', function()
       print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
     end, opts)
-    map('n', '<C-k>', vim.lsp.buf.signature_help, opts)
+    map('n', '<leader>k', vim.lsp.buf.signature_help, opts)
   end,
 })

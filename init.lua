@@ -1,11 +1,11 @@
 -- Basic config
 require("basic")
 
--- Key mapping
-require("keymaps")
-
 -- Plugins (lazy.nvim)
 require("plugins")
+
+-- Key mapping
+require("keymaps")
 
 -- Theme
 require("theme")
