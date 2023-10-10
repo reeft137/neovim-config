@@ -18,10 +18,11 @@ require("plugin-config.lualine")
 require("plugin-config.telescope")
 require("plugin-config.project")
 require("plugin-config.dashboard")
-require("plugin-config.nvim-cmp")
-require("plugin-config.mason")
-require("plugin-config.lspconfig")
 require("plugin-config.comment")
 
--- Misc
-require("lsp-ui") -- Better UI for LSP
+-- LSP & CMP config
+require("lsp-cmp-config.nvim-cmp")
+require("lsp-cmp-config.mason")
+require("lsp-cmp-config.lspconfig")
+require("lsp-cmp-config.lsp-ui")
+require("lsp-cmp-config.formatter")

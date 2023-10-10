@@ -4,11 +4,11 @@ if not status then
   return
 end
 
-comment.setup()
-
--- Keymaps
-local map = vim.keymap.set
-local opts = { remap = true }
-
-map("n", "<C-/>", "gcc", opts)
-map("v", "<C-/>", "gc", opts)
+comment.setup({
+  toggler = {
+    line = "<C-/>",
+  },
+  opleader = {
+    line = "<C-/>",
+  },
+})

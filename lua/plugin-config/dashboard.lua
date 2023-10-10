@@ -49,3 +49,9 @@ db.setup({
     },
   },
 })
+
+-- Keymaps
+local map = vim.keymap.set
+local opts = { noremap = true, silent = true }
+
+map("n", "<leader>d", ":Dashboard<CR>", opts) -- Find files

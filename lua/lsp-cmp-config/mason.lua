@@ -25,10 +25,8 @@ mason_lsp.setup({
   ensure_installed = {
     "lua_ls",
     "bashls",
+    "clangd",
     "pylsp",
     "rust_analyzer",
-    "clangd",
-    "marksman",
-    "yamlls",
   },
 })

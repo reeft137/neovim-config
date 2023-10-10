@@ -60,7 +60,7 @@ cmp.setup({
     { name = "buffer" },   -- For buffer word completion
     { name = "path" },     -- For path completion
   }),
-  formatting = require("plugin-config.lspkind").formatting,
+  formatting = require("lsp-cmp-config.lspkind").formatting,
 })
 
 -- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won"t work anymore).

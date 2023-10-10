@@ -6,7 +6,7 @@ end
 
 project.setup({
   detection_methods = { "pattern" },
-  patterns = { ".git", "Cargo.toml", "Makefile", "makefile"},
+  patterns = { ".git", "Cargo.toml", "Makefile", "makefile" },
 })
 
 local ts_status, telescope = pcall(require, "telescope")

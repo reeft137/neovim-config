@@ -3,7 +3,7 @@
 -- Basic UI config
 vim.opt.number = true        -- Show absolute line number
 vim.opt.signcolumn = "yes"   -- Sign column for showing status
-vim.opt.colorcolumn = "80"   -- Reference for the line length
+-- vim.opt.colorcolumn = "80"   -- Reference for the line length
 vim.opt.scrolloff = 8        -- Number of screen lines to keep above and below the cursor
 vim.opt.cursorline = true    -- Highlight cursor line
 vim.opt.cmdheight = 1        -- Number of screen lines to use for the command-line
@@ -21,10 +21,6 @@ vim.opt.pumheight = 10                            -- Number of lines for the com
 -- CMD UI config
 vim.cmd([[ autocmd TermOpen * setlocal nonumber ]]) -- Turn off the terminal line number
 
--- Show space as dot
-vim.opt.list = true -- Show invisible characters
-vim.opt.listchars = "space:·"
-
 -- Indent config
 vim.opt.tabstop = 8        -- Number of spaces that a <Tab> in the file counts for
 vim.opt.softtabstop = 2    -- Number of spaces that a <Tab> counts for while performing editing operations
@@ -33,6 +29,10 @@ vim.opt.expandtab = true   -- Use the appropriate number of spaces to insert a <
 vim.opt.shiftround = true  -- Round indent to multiple of 'shiftwidth' (N * shiftwidth)
 vim.opt.autoindent = true  -- Copy indent from current line when starting a new line
 vim.opt.smartindent = true -- Do smart autoindenting when starting a new line
+
+-- Show space as dot
+vim.opt.list = true -- Show invisible characters
+vim.opt.listchars = "space:·"
 
 -- Search config
 vim.opt.incsearch = true  -- Search as characters are entered

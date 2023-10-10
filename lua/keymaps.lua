@@ -37,3 +37,6 @@ map("n", "<C-j>", "4j", opts)
 map("v", "<C-j>", "4j", opts)
 map("n", "<C-k>", "4k", opts)
 map("v", "<C-k>", "4k", opts)
+
+-- Save
+map("n", "<C-s>", ":w<CR>", opts)
