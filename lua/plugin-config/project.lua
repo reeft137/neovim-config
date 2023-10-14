@@ -16,3 +16,9 @@ if not ts_status then
 end
 
 pcall(telescope.load_extension, "projects")
+
+-- Keymaps
+local map = vim.keymap.set
+local opts = { noremap = true, silent = true }
+
+map("n", "<leader>j", ":Telescope projects<CR>", opts) -- Find files

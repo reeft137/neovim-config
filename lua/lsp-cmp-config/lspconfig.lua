@@ -10,6 +10,7 @@ lspconfig.bashls.setup({})
 lspconfig.clangd.setup({})
 lspconfig.pylsp.setup({})
 lspconfig.rust_analyzer.setup({})
+lspconfig.jdtls.setup({})
 
 ---------------------------- Keymaps ---------------------------
 local map = vim.keymap.set

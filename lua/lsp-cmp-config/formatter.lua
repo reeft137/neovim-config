@@ -24,6 +24,7 @@ formatter.setup {
     },
     python = require("formatter.filetypes.python").black,
     rust = require("formatter.filetypes.rust").rustfmt,
+    java = require("formatter.filetypes.java").clangformat,
   },
 }
 

@@ -28,5 +28,6 @@ mason_lsp.setup({
     "clangd",
     "pylsp",
     "rust_analyzer",
+    -- "jdtls",
   },
 })
